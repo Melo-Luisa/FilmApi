@@ -83,6 +83,21 @@ public class App {
         System.out.println("Resenhas: " + resenha); 
     }
 
+    public void ID(String json, List<String> id){
+        String[] palavras = json.split("\"id\":");
+
+            for (int i = 1; i < palavras.length; i++) {  // começa de 1 porque o 0 é antes do primeiro título
+                String pedaco = palavras[i];
+
+                // Pega o que está entre aspas após "title":
+                String titulo = pedaco.split("\"")[1];
+
+                id.add(titulo);
+            }
+
+        System.out.println("Resenhas: " + id); 
+    }
+
     
 
     public static void main(String[] args) throws Exception {
@@ -91,6 +106,7 @@ public class App {
        // List<Integer> year = new ArrayList<>();
         List<Double> rates = new ArrayList<>();
         List<String> resenha = new ArrayList<>();
+        List<String> ides = new ArrayList<>();
 
         try{
             //cria cliente http
@@ -132,6 +148,7 @@ public class App {
             app.Image(json, urlImages);
             app.rating(json, rates);
             app.Overview(json, resenha);
+            app.ID(json, ides);
                   
         
 
