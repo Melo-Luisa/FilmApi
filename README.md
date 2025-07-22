@@ -3,7 +3,7 @@
 <li>Construir um código acessando os request da API</li>
 <li>Cadastras chava na TMDB e acessá-la</li>
 <li>Pegar as respostas e mostrar no console</li>
-<h3>Note</h3>
+<h3>📌 Note</h3>
 Abrimos o projeto pelo VsCode. Por inicio toda código está na main, mais para frente iremos otimizá-lo.</br>
 Colocamos um .gitignore para que a chave API não apareça.
 
@@ -15,6 +15,9 @@ Colocamos um .gitignore para que a chave API não apareça.
 <li>Título do filme</li>
 <li>Resenha</li>
 <li>Nota</li>
+<h3>⚠️Problems of the day</h3>
+GIT PULL. Não se esqueça de puxar informações ques estão no remoto ou vice-versa
+
 
 <h2>⛔3º Dia</h2>
 <h2>⛔4º Dia</h2>
