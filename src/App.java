@@ -46,7 +46,7 @@ public class App {
                 rate.add(nota);
             }
 
-            System.out.println("Títulos encontrados: " + rate); 
+            System.out.println("Notas: " + rate); 
     }
     
 
@@ -83,30 +83,30 @@ public class App {
         System.out.println("Resenhas: " + resenha); 
     }
 
-    public void ID(String json, List<String> id){
+    public void ID(String json, List<Double> id){
         String[] palavras = json.split("\"id\":");
 
             for (int i = 1; i < palavras.length; i++) {  // começa de 1 porque o 0 é antes do primeiro título
-                String pedaco = palavras[i];
+                String pedaco = palavras[i].split(",")[0];
 
                 // Pega o que está entre aspas após "title":
-                String titulo = pedaco.split("\"")[1];
+                Double item = Double.parseDouble(pedaco.trim());
 
-                id.add(titulo);
+                id.add(item);
             }
 
-        System.out.println("Resenhas: " + id); 
+        System.out.println("Id: " + id); 
     }
+
 
     
 
     public static void main(String[] args) throws Exception {
         List<String> titles = new ArrayList<>(); //parseia o título de cada filme do JSON;
         List<String> urlImages = new ArrayList<>();//parseia a URL do pôster de cada filme do JSON;
-       // List<Integer> year = new ArrayList<>();
         List<Double> rates = new ArrayList<>();
         List<String> resenha = new ArrayList<>();
-        List<String> ides = new ArrayList<>();
+        List<Double> ides = new ArrayList<>();
 
         try{
             //cria cliente http
