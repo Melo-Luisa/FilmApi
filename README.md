@@ -27,7 +27,7 @@ GIT PULL. Não se esqueça de puxar informações ques estão no remoto ou vice-
 <h3>💀 Problems of the day</h3>
 1. Uso do split em list é muito fraco para um API com uma lista grande
 <p> Por conta disso temos que melhorar o manuseio do array já que temos 3 array e juntamos eles</p>
-2. Usamos o <strong>Gson</strong> para fazer a análise mais rapida
+2. Usamos o <strong>Gson</strong> para fazer a análise mais rapida</br>
 3. Organização da POO
 <h3>Separamos por:</h3>
 <li>HttpService</li>
