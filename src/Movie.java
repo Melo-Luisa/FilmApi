@@ -7,12 +7,14 @@ public class Movie {
     public double vote_average;
     public String overview;
     public int id;
+    public String release_date;
 
     public String getTitle(){return title;}
    // public String getImage(){return poster_path;}
     public Double getRate(){return vote_average;}
     public String getOverview(){return overview;}
     public Integer getId(){return id;}
+    public String getYear(){return release_date;}
 
     public String getFullPosterUrl() {
         return "https://image.tmdb.org/t/p/w500" + poster_path;

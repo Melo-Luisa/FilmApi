@@ -47,8 +47,9 @@ public class HttpService {
             // Envia a requisição e recebe a resposta
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-
+            
             return response.body();
+        
         
                     
         

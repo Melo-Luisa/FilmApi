@@ -1,0 +1,93 @@
+body {
+    font-family: 'Anton', sans-serif;
+    padding: 20px;
+    background-color: #1e1e1e;
+    background-image: url(./image/dark-vip-cinema-studio-still-life.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #e0e0e0;
+    backdrop-filter: blur(8px);
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #cc8d0e;
+    text-shadow: 1px 1px 10px rgba(202, 172, 7, 0.5);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Container com grid responsivo */
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+/* Cartão de filme com efeito vidro */
+.movie {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 187, 0, 0.3);
+}
+
+/* Imagem centralizada com transição */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+/* img:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+} */
+
+/* Texto dentro dos filmes */
+.movie h2 {
+    color: #cc8d0e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.movie p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+/* Scrollbar estilizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cc8d0e;
+    border-radius: 8px;
+    border: 2px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #966707;
+}
