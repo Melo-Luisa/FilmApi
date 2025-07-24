@@ -58,7 +58,7 @@ GIT PULL. Não se esqueça de puxar informações ques estão no remoto ou vice-
 <li>Trazer um filtro do idioma da API já que podemos usar qualquer um.</li>
 
 <h3>Video</h3>
-[![Assista ao vídeo]Youtube](https://youtu.be/UMfRoBLRuN4)
+<a href="https://youtu.be/UMfRoBLRuN4">Video</a>
 
 
 
