@@ -1,7 +1,7 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-
-//import javax.swing.text.html.HTML;
 
 
 public class App {
@@ -20,6 +20,9 @@ public class App {
 
         //Chamada para o método da class MovieParser
         List<Movie> movies = MovieParser.parse(json);
+        //Filmes ordenados
+        Collections.sort(movies);
+        Comparator.reverseOrder();
         
         new HTMLGenerator().generateHTML(movies);
 

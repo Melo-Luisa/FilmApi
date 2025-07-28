@@ -1,7 +1,7 @@
 /**
  * Class para pegar as informações necessário já filtradas em MovieParser
  */
-public class Movie {
+public class Movie implements Comparable<Movie>{
     public String title;
     public String poster_path;
     public double vote_average;
@@ -19,6 +19,12 @@ public class Movie {
     public String getFullPosterUrl() {
         return "https://image.tmdb.org/t/p/w500" + poster_path;
             
+    }
+
+    //Ordenou de forma crescente da maior nota para menor   
+    @Override
+    public int compareTo(Movie other){
+        return Double.compare(other.vote_average, this.vote_average);
     }
 }
 

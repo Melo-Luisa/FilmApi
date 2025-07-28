@@ -60,9 +60,20 @@ GIT PULL. Não se esqueça de puxar informações ques estão no remoto ou vice-
 <h3>Video</h3>
 <a href="https://youtu.be/UMfRoBLRuN4">Video</a>
 
+<h2>✅5º Dia</h2>
+<li>Objetivo: Trazer o encapsulamento para a API e para o HTML</li>
+<li>Quase nenhum problema</li>
 
 
+<h2>✅6º Dia</h2>
+<li>Objetivo: Any API key</li>
+<li>Mudanças: Nenhuma kkk pois o nosso código por segurança já tinha o config.properties que pode ter qualquer chave e no httpService basta mudar apenas o site em questão</li>
+<h3>OTIMIZAÇÃO</h3>
 
-<h2>⛔5º Dia</h2>
-<h2>⛔6º Dia</h2>
-<h2>⛔7º Dia</h2>
+<h2>✅7º Dia</h2>
+<li>Objetivo: Ordenar lista</li>
+<li>Assim podemos ter uma lista mais ordenada</li>
+<li>E-mail foi bem intuitivo, facilitando a implmentação em Movie.java e app.java</li>
+
+<h1>7 Days of Code in Java - Alura </h1>
+<p>Finalizando mais um projeto com pensamentos em outros...<p>
